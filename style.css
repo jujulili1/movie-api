@@ -1,0 +1,65 @@
+ body {
+     font-family: 'Roboto Slab', serif;
+     text-align: center;
+     position: relative;
+     background-color: pink;
+ }
+ 
+ form {
+     margin: 5px auto;
+ }
+ 
+ .form-1 input {
+     width: 200px;
+ }
+ 
+ .form-2 input {
+     width: 200px;
+ }
+ 
+ .form-3 textarea {
+     width: 405px;
+ }
+ 
+ .form-4 button {
+     width: 405px;
+     background-color: brown;
+ }
+ 
+ .container1-1 {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-around;
+     margin-top: 40px;
+ }
+ 
+ .display-card {
+     display: flex;
+     flex-direction: column;
+     border-radius: 10px;
+     height: 450px;
+     box-sizing: border-box;
+     margin: 5px;
+     margin-bottom: 30px;
+     align-items: center;
+     background-color: white;
+     width: 25%;
+ }
+ 
+ .display-card .header {
+     margin: 10px;
+     width: 200px;
+     height: 300px;
+     box-sizing: border-box;
+ }
+ 
+ .card-title {
+     text-align: center;
+ }
+ 
+ .card-text {
+     font-size: 14px;
+     padding: 10px;
+ }

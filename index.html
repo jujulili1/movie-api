@@ -4,30 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <title>Movie</title>
 </head>
 
 <body>
-    <h1>Movie</h1>
+    <div class="container">
+        <h1>Movie List</h1>
+        <div class="form-1">
+            <form>
+                <input type="text" name="title" id="title" placeholder="Title" />
+                <input type="genre" name="genre" id="genre" placeholder="Genre" />
+            </form>
+        </div>
+        <div class="form-2">
+            <form>
+                <input type="release" name="release" id="release" placeholder="Release Year" />
+                <input type="imageLink" name="imageLink" id="imageLink" placeholder="Image Link" />
+            </form>
+        </div>
+        <div class="form-3">
+            <form>
+                <textarea name="description" id="description" cols="30" rows="3"></textarea>
+            </form>
+        </div>
+        <div class="form-4">
+            <button id="add-btn" type="button">Add</button>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="container1-1" id="content1"></div>
+    </div>
 
-    <form>
-        <div>
-            <input type="text" name="title" id="title" placeholder="Title" />
-        </div>
-        <div>
-            <input type="genre" name="genre" id="genre" placeholder="Genre" />
-        </div>
-        <div>
-            <input type="release" name="release" id="release" placeholder="Release Year" />
-        </div>
-        <input type="imageLink" name="imageLink" id="imageLink" placeholder="Image Link" />
-        </div>
-        </div>
-        <textarea name="description" id="description" cols="30" rows="10" placeholder="Description"></textarea>
-        </div>
-        <button id="add-btn" type="button">Add</button>
-    </form>
     <script src="script.js"></script>
+    <script src="show.js"></script>
 </body>
 
 </html>
